@@ -1,0 +1,75 @@
+.tttags {
+  cursor: text;
+}
+.tttags .tttplaceholder {
+  display: none;
+  font-style: italic;
+  opacity: 0.6;
+}
+.tttags .tttplaceholder.ttton {
+  display: inline;
+}
+.tttags .tttinputwrap {
+  position: relative;
+}
+.tttags .tttinputwrap .tttinput {
+  color: #eeeeee;
+  display: inline-block;
+  min-width: 10px;
+}
+.tttags .tttinputwrap .tttinput:after {
+  content: '\00a0\00a0';
+}
+.tttags .tttinputwrap .tttinput br {
+  display: none;
+}
+.tttags .tttinputwrap .tttinput:focus {
+  outline: none;
+  border: none;
+}
+.tttags .tttinputwrap .tttaglist {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #555555;
+  z-index: 9000;
+  max-height: 14.4em;
+  overflow: auto;
+  overflow-x: hidden;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+}
+.tttags .tttinputwrap .tttaglist ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.tttags .tttinputwrap .tttaglist ol li {
+  white-space: nowrap;
+  display: none;
+  line-height: 1.8em;
+  height: 1.8em;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  padding: 0 0.5em;
+  cursor: pointer;
+}
+.tttags .tttinputwrap .tttaglist ol li.ttton {
+  display: block;
+}
+.tttags .tttinputwrap .tttaglist ol li.tttsel {
+  background: #333333;
+}
+.tttags .tttinputwrap .tttaglist ol li:hover {
+  background: #333333;
+}
+.tttags.tttact .tttplaceholder.ttton {
+  display: none;
+}
+.tttags.tttact .tttinputwrap .tttaglist.ttton {
+  display: block;
+}
+.tttags:after {
+  content: '\00a0\00a0';
+}
