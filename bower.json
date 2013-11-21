@@ -7,7 +7,7 @@
 	],
 	"description": "a TT-styled tags jquery plugin",
 	"main": [
-		"lib/ttags.js"
+		"lib/tttags.js"
 	],
 	"license": "MIT",
 	"private": true,
