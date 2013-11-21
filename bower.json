@@ -7,8 +7,8 @@
 	],
 	"description": "a TT-styled tags jquery plugin",
 	"main": [
-		"lib/tttags.coffee",
-		"styles/tttags.less"
+		"tttags.js",
+		"tttags.css"
 	],
 	"license": "MIT",
 	"private": true,
