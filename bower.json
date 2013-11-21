@@ -1,0 +1,22 @@
+{
+	"name": "tttags",
+	"version": "0.0.1",
+	"authors": [
+		"Martin Algesten <martin@algesten.se>",
+		"Fredrik Appelberg <fredrik.appelberg@tt.se>"
+	],
+	"description": "a TT-styled tags jquery plugin",
+	"main": [
+		"lib/ttags.coffee",
+		"styles/ttags.less"
+	],
+	"license": "MIT",
+	"private": true,
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}
