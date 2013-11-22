@@ -2,6 +2,7 @@
   cursor: text;
 }
 .tttags .tttplaceholder {
+  color: #6f6f6f;
   display: none;
   font-style: italic;
   opacity: 0.6;
@@ -11,9 +12,10 @@
 }
 .tttags .tttinputwrap {
   position: relative;
+  margin-left: 0.3em;
 }
 .tttags .tttinputwrap .tttinput {
-  color: #eeeeee;
+  color: #555555;
   display: inline-block;
   min-width: 10px;
 }
@@ -50,7 +52,7 @@
   display: none;
   line-height: 1.8em;
   height: 1.8em;
-  color: #ffffff;
+  color: #6f6f6f;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   padding: 0 0.5em;
   cursor: pointer;
@@ -72,4 +74,7 @@
 }
 .tttags:after {
   content: '\00a0\00a0';
+}
+.tttags .tag {
+  margin-left: 0.3em;
 }

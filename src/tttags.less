@@ -1,10 +1,13 @@
 @import "bower_components/bootswatchtt/tt/variables.less";
 
 @liheight: 1.8em;
+@tagspacing: 0.3em;
+@inputcolor: @gray;
 
 .tttags {
     cursor: text;
     .tttplaceholder {
+        color: lighten(@inputcolor, 10%);
         display: none;
         font-style: italic;
         opacity: 0.6;
@@ -14,8 +17,9 @@
     }
     .tttinputwrap {
         position: relative;
+		margin-left: @tagspacing;
         .tttinput {
-            color: @gray-lighter;
+            color: @inputcolor;
             display: inline-block;
             min-width: 10px;
             &:after {
@@ -50,7 +54,7 @@
                     display: none;
                     line-height: @liheight;
                     height: @liheight;
-                    color: lighten(@gray-lighter, 10%);
+                    color: lighten(@inputcolor, 10%);
                     text-shadow: 0 1px 2px rgba(0,0,0,0.4);
                     padding: 0 0.5em;
                     cursor: pointer;
@@ -80,4 +84,7 @@
     &:after {
         content: '\00a0\00a0';
     }
+	.tag {
+		margin-left: @tagspacing;
+	}
 }

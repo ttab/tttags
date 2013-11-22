@@ -80,7 +80,7 @@ class TTTags
         return this if @has tag
         return this unless @opts.allowNew or opts.force or (inList = @inList tag)
         $el = $ subst @opts.template, tag:tag
-		$el.addClass @opts.className if @opts.className
+        $el.addClass @opts.className if @opts.className
         if @$inputwrap
             @$inputwrap.before($el)
         else
