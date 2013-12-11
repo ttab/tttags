@@ -25,7 +25,7 @@
 
   defaultOpts = {
     placeholder: '',
-    template: '<a class="tag">#{tag}</a>',
+    template: '<a class="tag">#{tag}</a> ',
     className: 'label label-default',
     allowNew: true,
     source: function() {},
@@ -155,10 +155,11 @@
       if (this.opts.className) {
         $el.addClass(this.opts.className);
       }
+      $el = $('<span>').append($el).append(' ');
       if (this.$inputwrap) {
         this.$inputwrap.before($el);
       } else {
-        if ($('.tag', this.$el).last().after($el).length === 0) {
+        if ($('.tag', this.$el).parent().last().after($el).length === 0) {
           this.$el.prepend($el);
         }
       }

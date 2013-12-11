@@ -12,7 +12,7 @@
 }
 .tttags .tttinputwrap {
   position: relative;
-  margin-left: 0.3em;
+  margin-left: 0em;
 }
 .tttags .tttinputwrap .tttinput {
   color: #555555;
@@ -76,5 +76,5 @@
   content: '\00a0\00a0';
 }
 .tttags .tag {
-  margin-left: 0.3em;
+  margin-left: 0em;
 }
