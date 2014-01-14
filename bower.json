@@ -20,6 +20,6 @@
 		"tests"
 	],
 	"dependencies": {
-		"bootswatchtt": "git@github.com:ttab/bootswatchtt.git#v1.0.0"
+		"bootswatchtt": "git@github.com:ttab/bootswatchtt.git#v1.0.1"
 	}
 }
