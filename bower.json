@@ -1,6 +1,6 @@
 {
 	"name": "tttags",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"authors": [
 		"Martin Algesten <martin@algesten.se>",
 		"Fredrik Appelberg <fredrik.appelberg@tt.se>"
@@ -20,6 +20,6 @@
 		"tests"
 	],
 	"dependencies": {
-		"bootswatchtt": "git@github.com:ttab/bootswatchtt.git#v1.0.0"
+		"bootswatchtt": "git@github.com:ttab/bootswatchtt.git"
 	}
 }
