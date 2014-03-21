@@ -1,25 +1,25 @@
 {
-	"name": "tttags",
-	"version": "0.0.3",
-	"authors": [
-		"Martin Algesten <martin@algesten.se>",
-		"Fredrik Appelberg <fredrik.appelberg@tt.se>"
-	],
-	"description": "a TT-styled tags jquery plugin",
-	"main": [
-		"tttags.js",
-		"tttags.css"
-	],
-	"license": "MIT",
-	"private": true,
-	"ignore": [
-		"**/.*",
-		"node_modules",
-		"bower_components",
-		"test",
-		"tests"
-	],
-	"dependencies": {
-		"bootswatchtt": "git@github.com:ttab/bootswatchtt.git"
-	}
+    "name": "tttags",
+    "version": "0.0.4",
+    "authors": [
+        "Martin Algesten <martin@algesten.se>",
+        "Fredrik Appelberg <fredrik.appelberg@tt.se>"
+    ],
+    "description": "a TT-styled tags jquery plugin",
+    "main": [
+        "tttags.js",
+        "tttags.css"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootswatchtt": "git@github.com:ttab/bootswatchtt.git"
+    }
 }
