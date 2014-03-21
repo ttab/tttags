@@ -12,7 +12,7 @@ subst = (expr, map) ->
 
 defaultOpts =
     placeholder : ''
-    template    : '<a class="tag">#{tag}</a> '
+    template    : '<a class="tag">#{tag}</a>'
     className   : 'label label-default'
     allowNew    : true
     source      : ->
@@ -81,12 +81,14 @@ class TTTags
         return this unless @opts.allowNew or opts.force or (inList = @inList tag)
         $el = $ subst @opts.template, tag:tag
         $el.addClass @opts.className if @opts.className
-        $el = $('<span>').append($el).append(' ')
         if @$inputwrap
             @$inputwrap.before($el)
         else
-            @$el.prepend $el if $('.tag', @$el).parent().last().after($el).length == 0
-
+            # try insert after last
+            if $('.tag', @$el).last().after($el).length == 0
+                # fall back on inserting first
+                @$el.prepend $el
+        $el.after(' ')
         @_trigger 'add', 'onTagAdd', tag, $el, !inList unless opts.silent
         this
 
