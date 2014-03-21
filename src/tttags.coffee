@@ -191,7 +191,7 @@ class TTTags
         if $sel.length
             @add $sel.text(), force:true
         else
-            @add @$input.text(), force:false
+            @add $.trim @$input.text(), force:false
         @$input.text('')
         @_suggest('')
 

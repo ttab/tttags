@@ -347,9 +347,9 @@
           force: true
         });
       } else {
-        this.add(this.$input.text(), {
+        this.add($.trim(this.$input.text(), {
           force: false
-        });
+        }));
       }
       this.$input.text('');
       return this._suggest('');
